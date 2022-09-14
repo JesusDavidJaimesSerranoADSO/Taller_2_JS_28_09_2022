@@ -1,15 +1,14 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-    //Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un depósito.
-    // • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
-    // • Volumen = PI *(radio^2)* H (altura del depósito)
-    // • El tiempo se encuentra en minutos.
-    // • Normalmente se mide el volumen en litros y el tiempo en segundos.
-    let caudal = Number(prompt(`caudal en litros por segundos`,53));
-    let radio = Number(prompt(`ingrese el radio de la mngera`,8));
-    let altura = Number(prompt(`ingrese la altura del tanque`,300));
-    let vmen = Math.PI * (radio ** 2) * altura
-    let res = vmen / caudal
-    console.log(`el tiempo estimado para el llenado de un depósito es de ${res}`);
+    // Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por
+    // $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le
+    // sobran $91000. ¿cuánto dinero tenía?
+    let llaves = Number(prompt(`precio de la llave por unidad`,11500));
+    let bomba = Number(prompt(`precio de la bomba`,1168000));
+    let pernos = Number(prompt(`precio del perno por unidad`,87000));
+    alert(`dinero sobrante 91000`)
+    let total = (llaves * 5) + bomba + (pernos * 3) + 91000
+    
+    console.log(`el dueño de la obra tenia $${total}`);
 
 })
