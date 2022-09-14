@@ -1,12 +1,11 @@
 addEventListener("DOMContentLoaded", ()=>{
 
-    // En el programa de cocina de “Doña Anita” han dado la receta para la preparación de bizcocho especial
-    // de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de
-    // nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina para
-    // hacer el bizcocho es
-    let cacao = Number(prompt(`ingrese la cantidad de cacao para la receta`,20));
-    let total = 100 * (cacao / 10)
+    // Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿ Cuántos Kg
+    // transporta ?
+    let caja = Number(prompt(`ingrese la cantidad de cajas`,25));
+    let peso = Number(prompt(`ingrese el peso de cada caja`,748));
+    let total = caja * peso
     
-    console.log(`la cantidad de harina que necesitas es ${total} gramos`);
+    console.log(`el peso total que transporta es ${total} Kg`);
 
 })
